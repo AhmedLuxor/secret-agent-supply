@@ -91,12 +91,10 @@ div.products {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-div {
-  display: block;
-}
-.img img {
   height: 9rem;
-  margin: 2rem 0;
+}
+
+.img img {
   max-width: 8rem;
+  margin: 2rem 0;
 }
