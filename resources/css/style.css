@@ -98,3 +98,50 @@ div.products {
   max-width: 8rem;
   margin: 2rem 0;
 }
+
+/* business information */
+.information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.information span {
+  display: block;
+  color: black;
+}
+
+.information .location {
+  width: 35%;
+}
+
+.information .location .location-title {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.information .hours {
+  width: 35%;
+}
+.information .hours .hours-title {
+  background-color: black;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+
+}
+
+footer .container {
+  height: 5rem;
+  margin-top: 4rem;
+  padding: 5rem 0rem;
+  display: flex;
+  align-items: center;
+}
