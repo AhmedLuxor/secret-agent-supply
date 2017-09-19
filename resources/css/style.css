@@ -55,12 +55,12 @@ section.banner div.title h1 {
 }
 
 /*NAVIGATION BAR */
-nav {
+nav.desktop {
   background-color: firebrick;
   padding: 0.75rem 0;
 }
 
-nav ul {
+nav.desktop ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -144,4 +144,123 @@ footer .container {
   padding: 5rem 0rem;
   display: flex;
   align-items: center;
+}
+
+.small-screens {
+  display: none;
+}
+
+@media only screen and (max-width:1024px) {
+  /*NAVIGATION BAR */
+  .desktop {
+    display: none;
+  }
+  .small-screens {
+    display: flex;
+  }
+
+  nav.small-screens {
+    background-color: firebrick;
+    padding: 0.75rem 0;
+  }
+
+  nav.small-screens ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .glasses {
+    display: none;
+}
+  .product {
+    width: 47%;
+}
+
+}
+
+@media only screen and (max-width: 470px) {
+  /* BANNER BACKGROUND */
+  section.banner {
+    height: 15rem;
+  }
+  /* title container */
+  section.banner div.title {
+    width: 100%;
+    position: relative;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+  /* NEW ARRIVAL */
+  section.banner div.title h2 {
+    font-weight: bold;
+    font-size: 0.77rem;
+    padding-bottom: 0.25rem;
+  }
+  /* SPORT BIKES AND MOTORCYCLES */
+  section.banner div.title h1 {
+    font-weight: bold;
+    font-size: 1rem;
+    padding-top: 0.25rem;
+  }
+
+  /* PRODUCTS */
+  .products {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .product {
+    width 90%;
+  }
+  .glasses {
+    display: none;
+  }
+  .watch {
+    display: none;
+  }
+  /* business information */
+  .information {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .information span {
+    display: block;
+    color: black;
+  }
+
+  .information .location {
+    width: 90%;
+  }
+
+  .information .location .location-title {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0px;
+  }
+  .location {
+    margin-bottom: 0.5rem;
+  }
+
+  .information .hours {
+    width: 90%;
+  }
+  .information .hours .hours-title {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    margin: 0px;
+  }
+  footer .container {
+    height: 5rem;
+    margin-top: 4rem;
+    padding: 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
